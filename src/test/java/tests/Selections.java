@@ -21,7 +21,7 @@ public class Selections {
 		Driver.getDriver().manage().window().maximize();
 	}
 
-	@Test
+	@Test (priority=1, description="This is dropdown test")
 	public void test1() throws InterruptedException {
 		Driver.getDriver().get("https://semantic-ui.com/modules/dropdown.html#selection");
 		Thread.sleep(1000);

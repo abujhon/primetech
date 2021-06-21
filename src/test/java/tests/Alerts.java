@@ -15,6 +15,7 @@ public class Alerts {
 	
 	@BeforeMethod
 	public void beforeMethod() {
+		Driver.getDriver();
 		Driver.getDriver().manage().window().maximize();
 		
 	}
